@@ -1,15 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:ui_template/providers/bottom_nav_bar_provider.dart';
+import 'package:ui_template/providers/theme_provider.dart';
+import 'package:ui_template/ui/screens/home/home_screen.dart';
+import 'package:ui_template/utils/app_theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => BottomNavigationBarProvider()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    final themeProvider = Provider.of<ThemeProvider>(context); // Access the ThemeProvider directly
+
+    return MaterialApp(
+      themeMode: themeProvider.currentTheme,
+      theme: AppTheme.lightTheme,
+      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
