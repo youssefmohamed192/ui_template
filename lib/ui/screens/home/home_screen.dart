@@ -6,6 +6,7 @@ import 'package:ui_template/ui/screens/home/tabs/menus_tab/menus_tab.dart';
 import 'package:ui_template/ui/screens/home/tabs/news_tab/news_tab.dart';
 import 'package:ui_template/ui/screens/home/tabs/workout_tab/workout_tab.dart';
 import 'package:ui_template/utils/app_assets.dart';
+import 'package:ui_template/utils/app_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "homeScreen";
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: tabs[currentScreenIndex], // Display the selected tab content
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: AppColors.primary,
         items: const [
           BottomNavigationBarItem(
             icon: ImageIcon(AssetImage(AppAssets.homeNavIcon)),

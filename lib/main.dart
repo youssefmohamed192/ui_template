@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ui_template/providers/bottom_nav_bar_provider.dart';
+import 'package:ui_template/providers/carousel_provider.dart';
 import 'package:ui_template/providers/theme_provider.dart';
 import 'package:ui_template/ui/screens/home/home_screen.dart';
 import 'package:ui_template/utils/app_theme.dart';
@@ -11,6 +12,8 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => BottomNavigationBarProvider()),
+        ChangeNotifierProvider(create: (_) => PageIndexProvider()),
+
       ],
       child: MyApp(),
     ),

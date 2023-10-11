@@ -8,14 +8,16 @@ abstract class AppTheme {
       color: AppColors.titleText, fontWeight: FontWeight.w400, fontSize: 18);
   static const TextStyle screenBoldTextStyle = TextStyle(
       color: AppColors.titleText, fontSize: 20, fontWeight: FontWeight.w600);
+  static const TextStyle imageLabelStyle = TextStyle(
+      fontWeight: FontWeight.w400, fontSize: 14, color: AppColors.titleText);
+  static const TextStyle carouselContainerTextStyle = TextStyle(
+      color: AppColors.black, fontWeight: FontWeight.w400, fontSize: 14);
   static ThemeData lightTheme = ThemeData(
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: AppColors.primary,
-      selectedItemColor: AppColors.selectedItem,
-      unselectedItemColor: AppColors.accent,
-      showSelectedLabels: false,
-      showUnselectedLabels: false
-    ),
-    scaffoldBackgroundColor: AppColors.primary
-  );
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: AppColors.primary,
+          selectedItemColor: AppColors.selectedItem,
+          unselectedItemColor: AppColors.accent,
+          showSelectedLabels: false,
+          showUnselectedLabels: false),
+      scaffoldBackgroundColor: AppColors.primary);
 }
