@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors{
   static const Color primary = Color(0xffFFFFFF);
-  static const Color accent = Color(0xffCFD8DC);
+  static const Color accent = Color(0xffECEFF1);
   static const Color featureColor = Color(0xffECFDF3);
   static const Color relaxationContainer = Color(0xffF3E5F5);
   static const Color meditationContainer = Color(0xffFCE4EC);
@@ -16,5 +16,6 @@ abstract class AppColors{
   static const Color transparent = Colors.transparent;
   static const Color red = Colors.red;
   static const Color containerTitleColor = Color(0xff455A64);
+  static const Color blueGray = Color(0xffF8F9FC);
 
 }

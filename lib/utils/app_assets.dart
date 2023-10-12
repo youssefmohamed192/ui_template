@@ -14,5 +14,12 @@ abstract class AppAssets{
   static const String navIcon = "${imagePath}icon_nav_bar.png";
   static const String personNavIcon = "${imagePath}person_nav_icon.png";
   static const String homeNavIcon = "${imagePath}home_nav_icon.png";
+  static const String appBarImage = "${imagePath}app_bar_image.png";
+  static const String frameIcon = "${imagePath}frame_icon.png";
+  static const String heartIcon = "${imagePath}heart_icon.png";
+  static const String listIcon = "${imagePath}list_icon.png";
+  static const String listViewImage = "${imagePath}list_view_image.png";
+  static const String plankImage = "${imagePath}plank_image.png";
+  static const String clockIcon = "${imagePath}clock_icon.png";
 
 }

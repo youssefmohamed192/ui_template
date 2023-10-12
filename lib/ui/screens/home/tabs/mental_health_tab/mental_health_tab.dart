@@ -70,7 +70,7 @@ class _MentalHealthTabState extends State<MentalHealthTab> {
           const SizedBox(
             height: 24,
           ),
-          buildMyRow("feature"),
+          buildMyRow("Feature"),
           SizedBox(
             height: 168,
             child: PageView.builder(

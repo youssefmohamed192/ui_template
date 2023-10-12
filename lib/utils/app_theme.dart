@@ -10,6 +10,8 @@ abstract class AppTheme {
       color: AppColors.titleText, fontSize: 20, fontWeight: FontWeight.w600);
   static const TextStyle imageLabelStyle = TextStyle(
       fontWeight: FontWeight.w400, fontSize: 14, color: AppColors.titleText);
+  static const TextStyle containerLabelStyle = TextStyle(
+      fontWeight: FontWeight.w400, fontSize: 16, color: AppColors.titleText);
   static const TextStyle carouselContainerTextStyle = TextStyle(
       color: AppColors.black, fontWeight: FontWeight.w400, fontSize: 14);
   static ThemeData lightTheme = ThemeData(
