@@ -7,7 +7,10 @@ class ImageCard extends StatelessWidget {
   final Color backgroundColor;
   final String description;
 
-  ImageCard({required this.imagePath, required this.backgroundColor, required this.description});
+  ImageCard(
+      {required this.imagePath,
+      required this.backgroundColor,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +21,13 @@ class ImageCard extends StatelessWidget {
           backgroundColor: AppColors.accent,
           backgroundImage: AssetImage(imagePath),
         ),
-        const SizedBox(height: 8,),
-        Text(description,style: AppTheme.imageLabelStyle,)
+        const SizedBox(
+          height: 8,
+        ),
+        Text(
+          description,
+          style: AppTheme.imageLabelStyle,
+        )
       ],
     );
   }

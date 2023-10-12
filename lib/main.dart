@@ -13,7 +13,6 @@ void main() {
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => BottomNavigationBarProvider()),
         ChangeNotifierProvider(create: (_) => PageIndexProvider()),
-
       ],
       child: MyApp(),
     ),
@@ -21,10 +20,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context); // Access the ThemeProvider directly
+    final themeProvider = Provider.of<ThemeProvider>(
+        context); // Access the ThemeProvider directly
 
     return MaterialApp(
       themeMode: themeProvider.currentTheme,

@@ -4,7 +4,6 @@ import 'package:ui_template/utils/app_colors.dart';
 import 'package:ui_template/utils/app_theme.dart';
 
 class MyContainerBuilder extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(

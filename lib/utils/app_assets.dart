@@ -1,4 +1,4 @@
-abstract class AppAssets{
+abstract class AppAssets {
   static const String imagePath = "assets/images/";
   static const String logoIcon = "${imagePath}logo.png";
   static const String loveImage = "${imagePath}love.png";
@@ -21,5 +21,7 @@ abstract class AppAssets{
   static const String listViewImage = "${imagePath}list_view_image.png";
   static const String plankImage = "${imagePath}plank_image.png";
   static const String clockIcon = "${imagePath}clock_icon.png";
-
+  static const String secondAppBarImage = "${imagePath}group.png";
+  static const String hotTopicsImage = "${imagePath}hot_topics.png";
+  static const String doctorImage = "${imagePath}doctor_image.png";
 }

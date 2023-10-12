@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final int currentScreenIndex = provider.fetchCurrentScreenIndex;
 
     return Scaffold(
-      body: tabs[currentScreenIndex], // Display the selected tab content
+      body: tabs[currentScreenIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColors.primary,
         items: const [
@@ -52,7 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
         currentIndex: currentScreenIndex,
         onTap: (value) {
-          // Update the screen index when a tab is tapped
           provider.updateScreenIndex(value);
         },
       ),

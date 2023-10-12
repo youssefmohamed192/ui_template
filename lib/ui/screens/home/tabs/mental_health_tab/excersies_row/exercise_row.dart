@@ -26,7 +26,7 @@ class ExerciseContainer extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Image.asset(imagePath,width: 24,height: 28),
+          Image.asset(imagePath, width: 24, height: 28),
           Text(title,
               style: AppTheme.carouselContainerTextStyle.copyWith(
                   color: AppColors.black, fontWeight: FontWeight.bold)),

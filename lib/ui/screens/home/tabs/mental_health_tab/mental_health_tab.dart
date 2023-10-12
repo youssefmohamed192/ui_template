@@ -8,6 +8,7 @@ import 'package:ui_template/ui/screens/home/tabs/mental_health_tab/image_contain
 import 'package:ui_template/utils/app_assets.dart';
 import 'package:ui_template/utils/app_colors.dart';
 import 'package:ui_template/utils/app_theme.dart';
+import 'package:ui_template/widgets/build_my_row.dart';
 
 class MentalHealthTab extends StatefulWidget {
   @override
@@ -70,7 +71,10 @@ class _MentalHealthTabState extends State<MentalHealthTab> {
           const SizedBox(
             height: 24,
           ),
-          buildMyRow("Feature"),
+          BuildMyRow(
+              title: "Feature",
+              subTitle: "See more",
+              color: AppColors.darkGreen),
           SizedBox(
             height: 168,
             child: PageView.builder(
@@ -100,7 +104,10 @@ class _MentalHealthTabState extends State<MentalHealthTab> {
           const SizedBox(
             height: 24,
           ),
-          buildMyRow("Exercise"),
+          BuildMyRow(
+              title: "Exercise",
+              subTitle: "See more",
+              color: AppColors.darkGreen),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -237,45 +244,45 @@ class _MentalHealthTabState extends State<MentalHealthTab> {
     );
   }
 
-  Widget buildMyRow(String title) {
-    Size size = MediaQuery.of(context).size;
-    return Row(
-      children: [
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: size.width * 0.09),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title,
-                style: AppTheme.carouselContainerTextStyle
-                    .copyWith(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-            ],
-          ),
-        ),
-        const Spacer(),
-        TextButton(
-          onPressed: () {},
-          child: Row(
-            children: [
-              Text(
-                "See more",
-                style: AppTheme.carouselContainerTextStyle
-                    .copyWith(fontSize: 14, color: AppColors.darkGreen),
-              ),
-              const Icon(
-                Icons.arrow_forward_ios,
-                color: AppColors.darkGreen,
-                size: 16,
-              ),
-              const SizedBox(
-                width: 32,
-              )
-            ],
-          ),
-        ),
-      ],
-    );
-  }
+// Widget buildMyRow(String title) {
+//   Size size = MediaQuery.of(context).size;
+//   return Row(
+//     children: [
+//       Container(
+//         padding: EdgeInsets.symmetric(horizontal: size.width * 0.09),
+//         child: Column(
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             Text(
+//               title,
+//               style: AppTheme.carouselContainerTextStyle
+//                   .copyWith(fontWeight: FontWeight.bold, fontSize: 16),
+//             ),
+//           ],
+//         ),
+//       ),
+//       const Spacer(),
+//       TextButton(
+//         onPressed: () {},
+//         child: Row(
+//           children: [
+//             Text(
+//               "See more",
+//               style: AppTheme.carouselContainerTextStyle
+//                   .copyWith(fontSize: 14, color: AppColors.darkGreen),
+//             ),
+//             const Icon(
+//               Icons.arrow_forward_ios,
+//               color: AppColors.darkGreen,
+//               size: 16,
+//             ),
+//             const SizedBox(
+//               width: 32,
+//             )
+//           ],
+//         ),
+//       ),
+//     ],
+//   );
+// }
 }
