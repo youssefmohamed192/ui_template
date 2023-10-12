@@ -142,10 +142,9 @@ class _MentalHealthTabState extends State<MentalHealthTab> {
 
   PreferredSizeWidget buildAppBar() => AppBar(
         toolbarHeight: MediaQuery.of(context).size.height * 0.12,
-        title: const Row(
+        title:  Row(
           children: [
-            ImageIcon(AssetImage(AppAssets.logoIcon),
-                color: AppColors.green, size: 48),
+            Image.asset(AppAssets.logoIcon,height: 48,width: 48),
             SizedBox(
               width: 8,
             ),
